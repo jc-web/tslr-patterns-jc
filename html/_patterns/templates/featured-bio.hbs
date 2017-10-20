@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    {{> organisms/header title="Featured Bio" }}
+
+	{{> molecules/featured-bio }}
+
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.featured-bio {
+  display: flex;
+}
+.featured-bio .person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 48px;
+}
+.featured-bio .person-info img {
+  margin-bottom: 12px;
+  width: 210px;
+  border-radius: 50%;
+}
+.featured-bio .person-info .person-name {
+  font-family: Heebo, sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.12;
+  text-align: left;
+  font-style: inherit;
+  color: #333a40;
+}
+.featured-bio .person-desc p {
+  font-family: Sanchez, serif;
+  font-size: 21px;
+  text-align: left;
+  font-style: italic;
+  color: #006e74;
+}
+.featured-bio .person-desc p a {
+  font-size: inherit;
+  text-align: inherit;
+}
+	        	</code>
+	    	</pre>
+		</div>
+	</div>
+</div>

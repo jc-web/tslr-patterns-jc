@@ -1,0 +1,34 @@
+.bulleted-list {
+    ul li {
+        position: relative;
+        margin: 20px 0;
+        padding-left: 38px;
+
+        font-family: 'Sanchez', serif;
+        font-size: 18px;
+        line-height: 1.33;
+        text-align: left;
+        color: #006e74;
+        list-style: none;
+        
+        &:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            
+            position: absolute;
+            top: 6px;
+            left: 0;
+            border-radius: 50%;
+
+            background-color: #de4365;
+            border: 1px solid #de4365;
+        }
+
+        ul li {
+            &:before {
+                background-color: transparent;
+            }
+        }
+    }
+}

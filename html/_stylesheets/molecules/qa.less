@@ -1,0 +1,51 @@
+.qa-module {
+    .accordion {
+    	
+        display: flex;
+	    align-items: center;
+
+	    margin: 20px 0;
+	    
+	    font-family: 'Heebo', sans-serif;
+	    font-size: 26px;
+	    
+	    line-height: 1.15;
+	    color: #323a41;
+	    cursor: pointer;
+	    
+	    -webkit-transition: 0.4s;
+	    -o-transition: 0.4s;
+	    transition: 0.4s;
+    }
+
+    .chevron {
+	    margin-right: 16px;
+	    width: 22px;
+	    height: 22px;
+
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-image: url('/images/chevrons.png');
+	    
+	    transition: all 0.5s ease;
+	}
+
+	.accordion.active .chevron {
+	    transform: rotate(90deg);
+	}
+    
+    .panel {
+        display: none;
+	    padding: 0 18px;
+	    background-color: #fff;
+	    box-shadow: none;
+    }
+
+    .panel p {
+		font-family: Sanchez;
+	    font-size: 17px;
+	    font-style: italic;
+	    line-height: 1.53;
+	    color: #495966;
+    }
+}

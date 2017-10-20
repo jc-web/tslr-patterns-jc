@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <base href="TW/Highland/TSLR" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Highland TSLR 1.0 - Components Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script>
+      if(!window.HTMLPictureElement){
+        document.write('<script src="/scripts/libs/respimage.min.js" async><\/script>');
+      }
+    </script>
+  </head>
+<body>
+<div class="container-fluid">
+    <header>
+    	<a href="/#">< root</a>
+    <h2>Highland TSLR 1.0 - Components Guide</h2>
+    <h3>Q&amp;A Module</h3>
+    <hr>
+    </header>
+	  <div class="qa-module">
+	      <div class="accordion">
+	          <div class="chevron"></div>
+	          Q: Accordion module example entry 01
+	      </div>
+	  
+	      <div class="panel">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	              consequat.</p>
+	  
+	          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	  
+	          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      </div>
+	  </div>
+	  <div class="qa-module">
+	      <div class="accordion">
+	          <div class="chevron"></div>
+	          Q: Accordion module example entry 02
+	      </div>
+	  
+	      <div class="panel">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	              consequat.</p>
+	  
+	          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	  
+	          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+	              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      </div>
+	  </div>
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.qa-module .accordion {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  font-family: 'Heebo', sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #323a41;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.qa-module .chevron {
+  margin-right: 16px;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/images/chevrons.png');
+  transition: all 0.5s ease;
+}
+.qa-module .accordion.active .chevron {
+  transform: rotate(90deg);
+}
+.qa-module .panel {
+  display: none;
+  padding: 0 18px;
+  background-color: #fff;
+  box-shadow: none;
+}
+.qa-module .panel p {
+  font-family: Sanchez;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.53;
+  color: #495966;
+}
+				</code>
+			</pre>		
+		</div>
+		<div class="code-snippet">
+			<h5>Javascript:</h5>
+			<pre>
+				<code class="language-js">
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    panel.classList.toggle("show");
+  });
+}
+				</code>
+			</pre>		
+		</div>
+	</div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/scripts/prism.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

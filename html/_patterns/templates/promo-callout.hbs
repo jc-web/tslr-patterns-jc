@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    {{> organisms/header title="Promotional Callout" }}
+
+    {{> molecules/promo-callout }}
+
+    {{> organisms/footer }}
+
+    <div class="code-wrapper">
+        <div class="code-snippet">
+            <h5>CSS:</h5>
+            <pre>
+				<code class="language-css">
+.promo-callout {
+  display: flex;
+  padding: 40px 80px;
+  background-color: #0D6E73;
+}
+.promo-callout > div {
+  margin: 0 12px;
+}
+.promo-callout .img-wrapper {
+  min-width: 20%;
+  background-image: url(/images/graph.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.promo-callout h2 {
+  color: #fff;
+  text-align: left;
+}
+.promo-callout .content {
+  margin: 0 40px;
+}
+.promo-callout .content p {
+  margin: 0;
+  color: #fff;
+  font-style: normal;
+  font-size: 18px;
+}
+.promo-callout .btn-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+	          </code>
+	        </pre>
+        </div>
+    </div>
+</div>

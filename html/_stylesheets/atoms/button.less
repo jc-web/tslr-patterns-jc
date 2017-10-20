@@ -1,0 +1,33 @@
+.default-button {
+  padding: 9px 25px 7px;
+  border: 2px solid #4A5965;
+  background: transparent;
+  border-radius: 0;
+  color: #4A5965;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none !important;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  display: inline-block;
+
+  &:hover {
+    background-color: #4A5965;
+    color: #fff;
+  }
+
+  &.inverted {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #4A5965;
+    }
+  }
+}

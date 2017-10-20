@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    {{> organisms/header title="Signup Form" }}
+
+	{{> molecules/signup-form }}
+
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.signup-form input {
+  margin-top: 5px !important;
+  height: 40px !important;
+  border: solid 1px #96d0c8 !important;
+  border-radius: 0 !important;
+  padding: 0 12px !important;
+}
+.signup-form input.hs-input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: inherit !important;
+}
+.signup-form input[type="submit"] {
+  margin: 0;
+  padding: 0px 25px 0px !important;
+  border: 2px solid #4A5965 !important;
+  background: transparent;
+  color: #4A5965 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none !important;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  text-shadow: none;
+}
+.signup-form input[type="submit"]:hover {
+  background-color: #4A5965;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+.signup-form label > span:first-of-type {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  color: #006e74 !important;
+}
+.signup-form .input select {
+  background: #fff;
+  height: 42px;
+  width: 100%;
+  max-width: 100%;
+  border: solid 1px #96d0c8 !important;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+.signup-form .hs_community_workflow .input {
+  position: relative;
+}
+.signup-form .hs_community_workflow .input:after {
+  content: '>';
+  font: 16px Consolas, monospace;
+  color: #96d0c8;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 0px;
+  top: 8px;
+  border-bottom: 1px solid #96d0c8;
+  position: absolute;
+  pointer-events: none;
+  width: 41px;
+  padding: 0 0 8px 0;
+  text-indent: 16px;
+}
+	        	</code>
+	    	</pre>
+		</div>
+	</div>
+
+</div>

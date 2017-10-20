@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    {{> organisms/header title="Bulleted list" }}
+
+    {{> molecules/bulleted-list }}
+
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.bulleted-list ul li {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 38px;
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #006e74;
+  list-style: none;
+}
+.bulleted-list ul li:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  border-radius: 50%;
+  background-color: #de4365;
+  border: 1px solid #de4365;
+}
+.bulleted-list ul li ul li:before {
+  background-color: transparent;
+}
+          </code>
+        </pre>
+      </div>
+</div>
+</div>

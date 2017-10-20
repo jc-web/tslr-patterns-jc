@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- <base href="TW/Highland/TSLR" /> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Highland TSLR 1.0 - Components Guide</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script>
+      if(!window.HTMLPictureElement){
+        document.write('<script src="/scripts/libs/respimage.min.js" async><\/script>');
+      }
+    </script>
+  </head>
+<body>
+<div class="container-fluid">
+    <header>
+    	<a href="/#">< root</a>
+    <h2>Highland TSLR 1.0 - Components Guide</h2>
+    <h3>Authorship</h3>
+    <hr>
+    </header>
+	<div class="authorship">
+	    <div class="authorship-img"></div>
+	    <div class="authorship-info">
+	        <p class="authorship-name">Martha Lien</p>
+	        <p class="authorship-position">Thrivent Financial</p>
+	    </div>
+	</div>
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.authorship {
+  display: flex;
+  align-items: center;
+}
+
+.authorship-img {
+  margin-right: 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ECA2B2;
+  background-color: #ccc;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+
+.authorship-name {
+  font-family: 'Heebo', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.12;
+  text-align: left;
+  font-style: inherit;
+  color: #333a40;
+}
+
+.authorship-position {
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+  text-align: left;
+  font-style: inherit;
+  color: #006e74;
+}
+          </code>
+        </pre>
+      </div>
+      <div class="code-snippet">
+          <h5>HTML:</h5>
+          <pre>
+				    <code class="language-js">
+<div class="authorship">
+		<div class="authorship-img"></div>
+		<div class="authorship-info">
+			<p class="authorship-name">Martha Lien</p>
+			<p class="authorship-position">Thrivent Financial</p>
+    </div>
+</div>
+            </code>
+        </pre>
+      </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/scripts/prism.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>

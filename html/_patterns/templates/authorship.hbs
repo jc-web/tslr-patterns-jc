@@ -1,0 +1,63 @@
+<div class="container-fluid">
+    {{> organisms/header title="Authorship" }}
+
+	{{> molecules/authorship }}
+
+	<div class="code-wrapper">
+		<div class="code-snippet">
+			<h5>CSS:</h5>
+			<pre>
+				<code class="language-css">
+.authorship {
+  display: flex;
+  align-items: center;
+}
+
+.authorship-img {
+  margin-right: 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #ECA2B2;
+  background-color: #ccc;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+
+.authorship-name {
+  font-family: 'Heebo', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.12;
+  text-align: left;
+  font-style: inherit;
+  color: #333a40;
+}
+
+.authorship-position {
+  font-family: 'Sanchez', serif;
+  font-size: 18px;
+  text-align: left;
+  font-style: inherit;
+  color: #006e74;
+}
+          </code>
+        </pre>
+      </div>
+      <div class="code-snippet">
+          <h5>HTML:</h5>
+          <pre>
+				    <code class="language-js">
+<div class="authorship">
+		<div class="authorship-img"></div>
+		<div class="authorship-info">
+			<p class="authorship-name">Martha Lien</p>
+			<p class="authorship-position">Thrivent Financial</p>
+    </div>
+</div>
+            </code>
+        </pre>
+      </div>
+    </div>
+</div>
