@@ -9,7 +9,7 @@
   border-top: 1px solid #96d0c8;
   border-bottom: 1px solid #96d0c8;
 
-  font-family: 'Sanchez', serif;
+  font-family: $content-font;
   font-size: 24px;
   font-style: italic;
   line-height: 1.08;
@@ -34,7 +34,7 @@
   background-color: #de4365;
   color: #ffffff;
   border-radius: 50%;
-  font-family: 'Sanchez', serif;
+  font-family: $content-font;
   font-size: 30.4px;
   font-style: italic;
   text-align: center;

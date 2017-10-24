@@ -1,5 +1,5 @@
 .sources-citation h3 {
-    font-family: 'Heebo', serif;
+    font-family: $heading-font;
     font-size: 26px;
     line-height: 1.15;
     text-align: left;
@@ -25,7 +25,7 @@
     position: absolute;
     left: -26px;
     line-height: 1.8;
-    font-family: 'Heebo', sans-serif;
+    font-family: $heading-font;
     color: #de4365;
 }
 

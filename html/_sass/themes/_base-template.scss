@@ -1,0 +1,32 @@
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	.site-title {
+		width: 100%;
+	}
+
+	.wrapper {
+		flex: 1;
+		margin: 0 12px;
+	}
+
+	ul li {
+		margin: 8px 0;
+	}
+}
+
+
+.code-wrapper {
+  display: flex;
+  padding: 24px;
+}
+
+.code-snippet {
+  flex: 1;
+  margin: 12px;
+
+  .language-css {
+    margin: 0;
+  }
+}

@@ -10,7 +10,7 @@
 
 	h3 {
 		margin: 10px 0 30px;
-		font-family: 'Heebo', sans-serif;
+		font-family: $heading-font;
 		font-size: 22px;
 		line-height: 1.36;
 		text-align: left;
@@ -18,7 +18,7 @@
 	}
 
 	p {
-		font-family: 'Sanchez', serif;
+		font-family: $content-font;
 		font-size: 16px;
 		line-height: 1.62;
 		text-align: left;

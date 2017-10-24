@@ -16,7 +16,7 @@
 }
 
 .authorship-name {
-  font-family: 'Heebo', sans-serif;
+  font-family: $heading-font;
   font-size: 32px;
   font-weight: 300;
   line-height: 1.12;
@@ -26,7 +26,7 @@
 }
 
 .authorship-position {
-  font-family: 'Sanchez', serif;
+  font-family: $content-font;
   font-size: 18px;
   text-align: left;
   font-style: inherit;
